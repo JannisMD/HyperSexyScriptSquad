@@ -256,7 +256,7 @@ footer {
 	background-position: 550px 0px;
 	background-blend-mode: color-burn;
 	background-repeat: repeat repeat;
-	/*background-image: url(../img/Logo_4.jpg);*/
+	background-image: url(../img/Logo_4.jpg);
 	background-blend-mode: color-burn;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -271,9 +271,9 @@ background-image: url(../img/Logo_4.jpg);
 background-repeat: no-repeat;
 background-size:cover;
 background-position: center;
-background-blend-mode:color-burn;
+background-blend-mode:color-burn;*/
 
-*/
+
 }
 
 
