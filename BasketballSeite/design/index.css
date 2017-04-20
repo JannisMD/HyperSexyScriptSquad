@@ -86,7 +86,7 @@ body {
 	font-size: 16px;
 	color: grey;
 	background-color: rgb(146, 146, 146);
-	background-image: url(../img/newsEngin.15930447_062512-spt-heat-parade-25.jpg);
+	background-image: url(../img/trophy.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: center;
@@ -142,6 +142,11 @@ header h1 {
 	padding: 0px;
 	font-family: 'source-sans-700';
 	font-size: 40px;
+
+}
+h1#formular{
+	border: solid;
+	background-color: black;
 }
 
 header h1 > span {
@@ -174,7 +179,7 @@ header small {
 	color: #333333;
 }
 nav{
-	background-color: #423c3c;
+	background-color: rgb(0, 0, 0);
 	overflow: hidden;
 	color: #1d0000;
 	padding: 0;
@@ -182,7 +187,7 @@ nav{
 	margin: 0;
 }
 header#navi{
-	background-color: #232323;
+	background-color: rgb(0, 0, 0);
 }
 nav ul li{
 	display: inline;
@@ -206,7 +211,6 @@ main > header > div{
 	width: 100%;
 	max-width: 640px;
 	color: #ffffff;
-	background: /*#e28d48*/ url();
 	background-position: center center;
 	background-repeat:no-repeat;
 	background-blend-mode: multiply;
@@ -223,70 +227,46 @@ form{
 	border-top:10;
 	border-bottom: 10;
 	border-spacing: 2;
-	background-color: rgb(35, 35, 35);
+	background-color: rgb(0, 0, 0);
+	border: white;
+	border-style: solid;
 
 
 }
 section{
-	border-left: 10;
-	border-right: 10;
-	border-top:10;
-	border-bottom: 10;
-	border-style:ridge;
-	border-spacing: inherit;
-	background-color: rgb(35, 35, 35);
+	background-color: rgb(0, 0, 0);
 }
-/*main > header{
-	width: 100%;
-    padding: 128px 0px;
-    background-color: #929292;
-    background-image: /*url(./);*//*
-    background-position: 0px 0px;
-    background-blend-mode: multiply;
-    background-repeat: repeat repeat;
-}*/
+
 
 
 footer {
 	width: 100%;
 	height: inherit;
-	padding: 86px 0px;
-	background-color: #232323;
+	padding: 37px 0px;
+	background-color: rgb(0, 0, 0);
 	background-size: contain;
 	background-position: 550px 0px;
 	background-blend-mode: color-burn;
 	background-repeat: repeat repeat;
-	background-image: url(../img/Logo_4.jpg);
 	background-blend-mode: color-burn;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-/*margin: 0px;
-padding: 0px;
-font-family: 'museo-sans-300';
-font-size: 16px;
-color: grey;
-background-color: rgb(146, 146, 146);
-background-image: url(../img/Logo_4.jpg);
-background-repeat: no-repeat;
-background-size:cover;
-background-position: center;
-background-blend-mode:color-burn;*/
+}
 
+.container{
+	background-image: url(../img/Logo_3.jpg);
+	margin: 0px 0;
+  padding: inherit;
+  background-repeat: no-repeat;
+  background-position: inherit;
+	background-blend-mode: hard-light;
+	background-color: rgb(0, 0, 0);
+	padding-bottom: 85px;
 
 }
 
 
-
-footer a {
-	display: block;
-	width: 30%;
-	margin: 0 auto;
-}
-
-footer a img {
-	width: 100%;
-}
 
 
 
