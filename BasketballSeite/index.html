@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<head>
+<head id="home">
   <meta charset="utf-8">
   <title>Basketball Player Database</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -9,18 +9,18 @@
 </head>
 
 <body>
-  <header id="navi">
-    <nav>
-      <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#formular">add player</a></li>
-        <li><a href="design\players.html">players</a></li>
+  <header id="headerhome">
+    <nav id="navhome">
+      <ul id="ulHome">
+        <li id="navi01"><a href="#home">home</a></li>
+        <li id="navi02"><a href="#formular">add player</a></li>
+        <li id="navi03"><a href="players.html">players</a></li>
       </ul>
     </nav>
   </header>
 	<header>
 		<div>
-			<h1 id="home"><span>Basketball Player</span> Database</h1>
+			<h1><span>Basketball Player</span> Database</h1>
         “As a six-year-old boy <br>
           Deeply in love with you <br>
           I never saw the end of the tunnel.<br>
@@ -55,7 +55,7 @@
     <header>
   		<div>
         <h1 id="formular">Formular</h1>
-        <form class="" action="http://kittey.rockz:1111/api/V1/addPlayer" method="get">
+        <form class="" action="http://kittey.rockz:1111/api/V1/addPlayer" method="get"> <!-- "get" methode -->
           <section>
               Vorname <br>
               <input type="text" name="vorname" value="">
