@@ -38,3 +38,79 @@
 
 })(this);
 
+//MEIN SCRIPT FÜR DIE INDEX HTML WÜRDE AUCH FUNKTIONIEREN WENN IN HTML DIE ONSUBMIT MIT DER METHODE WÄRE
+/*var element = document.getElementById('formularLos');
+element.addEventListener('click', chkFormular);
+
+//hier jetzt alle überprüfungen für die einzelnen Felder in einer Funktion
+function chkFormular(){
+	//FELD VORNAME
+	//
+	//
+	if(document.Formular.vorname.value == ""){
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.vorname.focus();
+		return false;
+	}
+	//FELD NACHNAME
+	//
+	//
+	if (document.Formular.name.value == "") {
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.name.focus();
+		return false;
+	}
+	//FELD VEREIN
+	//
+	//
+	if(document.Formular.verein.value == ""){
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.verein.focus();
+		return false;
+	}
+	//FELD HEADCOACH
+	//
+	//
+	if(document.Formular.hcoach.value == ""){
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.hcoach.focus();
+		return false;
+	}
+
+	//FELD ASSISTENTCOACH
+	//
+	//
+	if(document.Formular.acoach.value == ""){
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.acoach.focus();
+		return false;
+	}
+
+
+
+
+}
+*/
+var aktiv = document.getElementById('aktiv');
+var inaktiv = document.getElementById('inaktiv');
+
+var arrayDatum = document.getElementById('jahr').value;
+var arrayDatumSplit = arrayDatum.split(".");
+
+function checkAktiv(){
+	if (!aktiv.checked && !inaktiv.checked) {
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.aktiv.focus();
+		return false;
+	}
+	if (arrayDatumSplit[2] >= 2016) {
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.jahr.focus();
+		return false;
+	}
+	if(arrayDatumSplit[2] <= 1){
+		alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+		document.Formular.jahr.focus();
+		return false;
+	}
+}

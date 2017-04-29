@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="design/index.css">
+
+
 </head>
 
 <body>
@@ -55,35 +57,35 @@
     <header>
   		<div>
         <h1 id="formular">Formular</h1>
-        <form class="" action="http://kittey.rockz:1111/api/V1/addPlayer" method="get"> <!-- "get" methode -->
+        <form name="Formular" class="" action="http://kittey.rockz:1111/api/V1/addPlayer" method="get" onsubmit="return checkAktiv()"> <!-- "get" methode -->
           <section>
-              Vorname <br>
-              <input type="text" name="vorname" value="">
+              <label for="vorname">Vorname</label><br>
+              <input type="text" name="vorname" value="" required pattern="^[a-zA-zöaüßÖÄÜ]+$">
               <br>
               <br>
-              Name <br>
-              <input type="text" name="name" value="">
+              <label for="name">Name</label><br>
+              <input type="text" name="name" value="" required pattern="^[a-zA-zöaüßÖÄÜ]+$">
               <br>
               <br>
-              Verein <br>
-              <input type="text" name="verein" value="">
+              <label for="verein">Verein</label><br>
+              <input type="text" name="verein" value="" required pattern="^[a-zA-zöaüßÖÄÜ]+$">
               <br>
               <br>
-              Headcoach <br>
-              <input type="text" name="hcoach" value="">
+              <label for="hcoach">Headcoach</label><br>
+              <input type="text" name="hcoach" value="" required pattern="^[a-zA-zöaüßÖÄÜ]+$">
               <br>
               <br>
-              Assistent Coach <br>
-              <input type="text" name="acoach" value="">
+              <label for="acoach">Assistent Coach</label><br>
+              <input type="text" name="acoach" value="" required pattern="^[a-zA-zöaüßÖÄÜ]+$">
               <br>
               <br>
-              Aktiv <br>
-              <input type="checkbox" name="aktiv" value="">Ja
-              <input type="checkbox" name="inaktiv" value="">Nein
+              <label for="aktiv">Aktiv</label><br>
+              <input type="checkbox" name="aktiv" value="" id="aktiv">Ja
+              <input type="checkbox" name="inaktiv" value="" id="inaktiv">Nein
               <br>
               <br>
-              Position <br>
-              <select class="" name="position" size="1">
+              <label for="position">Position</label><br>
+              <select class="" name="position" size="1" required>
                 <option value="center">Center</option>
                 <option value="power forward">Power Forward</option>
                 <option value="guard">Guard</option>
@@ -93,19 +95,19 @@
               </select>
               <br>
               <br>
-              Rückennummer<br>
-              <input type="number" min="0" max="100" name="number" step="1" value="0">
+              <label for="number">Rückennummer</label><br>
+              <input type="number" min="4" max="15" name="number" step="1" value="" required>
               <br>
               <br>
-              Geburtsdatum <br>
-              <input type="date" name="jahr" value="">
+              <label for="jahr">Geburtsdatum</label><br>
+              <input type="date" name="jahr" value="" required min="01-01-1800" max="31-12-2016" id="jahr">
               <br>
               <br>
-              Favorit markieren <br>
-              <input type="checkbox" name="favorit" value="">
+              <label for="favorit">Favorit markieren</label><br>
+              <input type="checkbox" name="favorit" value="" id="favorit">
               <br>
               <br>
-              <button type="submit" name="senden">Senden</button>
+              <button id="formularLos" type="submit" name="senden">Senden</button>
               <br>
           </section>
         </form>
