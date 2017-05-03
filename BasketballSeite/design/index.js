@@ -40,7 +40,7 @@
 
 //MEIN SCRIPT FÜR DIE INDEX HTML WÜRDE AUCH FUNKTIONIEREN WENN IN HTML DIE ONSUBMIT MIT DER METHODE WÄRE
 /*var element = document.getElementById('formularLos');
-element.addEventListener('click', chkFormular);
+element.addEventListener('click', chkFormular());
 
 //hier jetzt alle überprüfungen für die einzelnen Felder in einer Funktion
 function chkFormular(){
