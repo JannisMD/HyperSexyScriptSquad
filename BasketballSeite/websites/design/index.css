@@ -84,7 +84,7 @@ body {
 	padding: 0px;
 	font-family: 'museo-sans-300';
 	font-size: 16px;
-	color: grey;
+	color: white;
 	background-color: rgb(146, 146, 146);
 	background-image: url(../img/trophy.jpg);
 	background-repeat: no-repeat;
@@ -300,6 +300,13 @@ footer {
 	padding-bottom: 85px;
 
 }
+
+#chatAnzeige{
+	width: 30%;
+	height: 300px;
+	background-color: black; 
+}
+
 /*
  * MEDIA QUERIES
  */
