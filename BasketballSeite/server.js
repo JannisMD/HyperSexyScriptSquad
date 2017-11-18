@@ -1,13 +1,11 @@
-
-
 //Server starten
 var express = require('express');
 var app = express();
+
 var server = app.listen(3000,function(){
-  console.log('Server läuft');
+  console.log('Server wurde gestartet');
 });
 app.use(express.static('websites'));
-
 
 //Module für die Get/Post etc aufrufe
 var _ = require('underscore');
@@ -22,7 +20,7 @@ io.on('connection',function(socket){
   console.log('Socket Verbindung hergestellt', socket.id);
 
 
-  //auf chat emit reagieren ,, data daten die gesendet werden
+  //auf chat emit reagieren, data daten die gesendet werden
   socket.on('chat', function(data){
     //wegen bug gemacht
     console.log('jetzt Server.js methode chat');
